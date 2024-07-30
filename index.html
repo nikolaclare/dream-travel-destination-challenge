@@ -42,17 +42,29 @@
       }
 
       h1 {
+        font-size: 72px;
+      }
+
+      h1,
+      h2 {
         font-family: var(--secondary-font-family);
         color: var(--primary-color-forest-green);
       }
 
+      h4 {
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 1.5;
+      }
+
       .navbar {
-        background-color: var(--accent-color-deep-teal);
+        background-color: var(--primary-color-forest-green);
       }
 
       .navbar-brand,
       .nav-link {
-        color: var(--secondary-color-river-white);
+        color: var(--secondary-color-soft-moss);
         font-family: var(--main-font-family);
         font-weight: 700;
       }
@@ -72,8 +84,8 @@
       }
 
       .btn-custom {
-        background-color: var(--secondary-color-soft-moss);
-        color: var(--secondary-color-river-white);
+        background-color: var(--primary-color-forest-green);
+        color: var(--secondary-color-soft-moss);
         font-family: var(--main-font-family);
       }
 
@@ -93,6 +105,7 @@
       footer {
         background-color: var(--primary-color-forest-green);
         color: var(--secondary-color-river-white);
+
       }
 
       footer .email-link {
@@ -103,21 +116,24 @@
       }
 
       footer a:hover,
-      .email-link:hover {
+      .email-link:hover,
+      .navbar-brand:hover,
+      .nav-link:hover,
+      .btn-custom:hover {
         color: var(--accent-color-sunset-orange);
       }
 
 
       footer .fa-brands {
-        font-size: 26px;
-        color: var(--accent-color-sunset-orange);
-        margin: 0 20px;
+        font-size: 48px;
+        color: var(--secondary-color-soft-moss);
+        margin: 0 50px 50px 0px;
         transition: all 100ms ease-in-out;
         opacity: 0.7;
       }
 
       footer .fa-brands:hover {
-        color: var(--secondary-color-soft-moss);
+        color: var(--accent-color-sunset-orange);
       }
 
       .grid {
@@ -196,7 +212,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Blue Derby Mountain Bike Trails</h5>
               <p>Experience the thrill of mountain biking through lush forests and scenic trails.</p>
-              <a href="https://www.discovertasmania.com.au/things-to-do/outdoor-and-adventure/mountain-bike-and-cycling/"
+              <a href="https://www.discovertasmania.com.au/things-to-do/outdoor-and-adventure/bluederbymtbtrails/"
                 target="_blank" class="btn btn-custom">Learn More</a>
             </div>
           </div>
@@ -205,7 +221,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Cradle Mountain Overland Track Walk</h5>
               <p>Discover the breathtaking beauty of Tasmania's iconic Overland Track.</p>
-              <a href="#" class="btn btn-custom">Explore Now</a>
+              <a href="https://www.discovertasmania.com.au/things-to-do/tours/tasmanian-walking-company/cradle-mountain-adventure-walk/"
+                target="_blank" class="btn btn-custom">Explore Now</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -213,7 +230,8 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Franklin River Rafting</h5>
               <p>Embark on an exhilarating white-water rafting adventure.</p>
-              <a href="#" class="btn btn-custom">Book a Tour</a>
+              <a href="https://www.discovertasmania.com.au/things-to-do/tours/franklinriverrafting/?ct=franklin+river+rafting,c-LlZZ5XTn6-CPO9UR5vCQ,_ace70367-e830-430c-9d8b-7434a3bf1fce_en,atdw"
+                target="_blank" class="btn btn-custom">Book a Tour</a>
             </div>
           </div>
         </div>
@@ -231,100 +249,134 @@
     </header>
     <main>
       <div class="container my-5">
-        <div class="row text-center">
+        <div class="row text-center gx-5">
           <div class="col-lg-4 feature-item">
-            <img src="images/blue-derby.webp" alt="Blue Derby">
-            <h2>Blue Derby</h2>
-            <p>Once a thriving mining town with the richest tin mine in the world and one of the last remaining
-              wilderness areas, Derby
-              is now home to one of the world's premier mountain bike networks located in Tasmania, Australia.
-              Encompassing over 125km
-              of purpose built mountain bike trails with options to suit all skill levels. Start planning your Blue
-              Derby Mountain
-              Bike Trails adventure here.</p>
-            <p><a class="btn btn-custom" href="https://ridebluederby.com.au/trails" target="_blank"
-                role="button">Explore Trails »</a></p>
+            <div class="p-3">
+              <img src="images/blue-derby.webp" alt="Blue Derby">
+              <h2 class="mt-4">Blue Derby</h2>
+              <p>Once a thriving mining town with the richest tin mine in the world and one of the last remaining
+                wilderness areas, Derby
+                is now home to one of the world's premier mountain bike networks located in Tasmania, Australia.
+                Encompassing over 125km
+                of purpose built mountain bike trails with options to suit all skill levels. Start planning your Blue
+                Derby Mountain
+                Bike Trails adventure here.</p>
+              <p><a class="btn btn-custom" href="https://ridebluederby.com.au/trails" target="_blank"
+                  role="button">Explore Trails »</a></p>
+            </div>
           </div>
           <div class="col-lg-4 feature-item">
-            <img src="images/cradle mountain.webp" alt="Cradle Mountain">
-            <h2>Cradle Mountain</h2>
-            <p>​​Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness World
-              Heritage Area.
-              From moss-covered rainforests and deep river gorges to snow-covered mountains, wild alpine moorlands and
-              glacial lakes,
-              the park is revered for its diverse and breath-taking landscapes. Threading through it all is a web of
-              walking
-              tracks, including the celebrated Overland Track.</p>
-            <p><a class="btn btn-custom"
-                href="https://www.discovertasmania.com.au/regions/north-west/cradle-mountain-lake-st-clair-national-park/"
-                target="_blank" role="button">Discover more »</a></p>
+            <div class="p-3">
+              <img src="images/cradle mountain.webp" alt="Cradle Mountain">
+              <h2 class="mt-4">Cradle Mountain</h2>
+              <p>​​Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness
+                World
+                Heritage Area.
+                From moss-covered rainforests and deep river gorges to snow-covered mountains, wild alpine moorlands and
+                glacial lakes,
+                the park is revered for its diverse and breath-taking landscapes. Threading through it all is a web of
+                walking
+                tracks, including the celebrated Overland Track.</p>
+              <p><a class="btn btn-custom"
+                  href="https://www.discovertasmania.com.au/regions/north-west/cradle-mountain-lake-st-clair-national-park/"
+                  target="_blank" role="button">Discover more »</a></p>
+            </div>
           </div>
           <div class="col-lg-4 feature-item">
-            <img src="images/Franklin River.webp" target="_blank" alt="Franklin River">
-            <h2>Franklin River</h2>
-            <p>The Franklin River curls around the base of one of Tasmania's most imposing mountains, Frenchmans Cap.
-              Saved from being dammed in the 1980s, this remote and remarkable river now offers one of the world's great
-              wilderness
-              rafting expeditions. With its clear pure water and even cleaner air, the Franklin is one of the last truly
-              wild rivers running through one of
-              the most undisturbed environments on Earth.</p>
-            <p><a class="btn btn-custom"
-                href="https://www.discovertasmania.com.au/regions/west-coast/franklin-gordon-wild-rivers-national-reserve/?ct=franklin+river,Wtfnpd6EQGWfarGVBu5aQg,_7b9f8e4f-a167-4d10-ba0f-bb62a69ac962_en,stan"
-                target="_blank" role="button">View details »</a></p>
+            <div class="p-3">
+              <img src="images/Franklin River.webp" target="_blank" alt="Franklin River">
+              <h2 class="mt-4">Franklin River</h2>
+              <p>The Franklin River curls around the base of one of Tasmania's most imposing mountains, Frenchmans Cap.
+                Saved from being dammed in the 1980s, this remote and remarkable river now offers one of the world's
+                great
+                wilderness
+                rafting expeditions. With its clear pure water and even cleaner air, the Franklin is one of the last
+                truly
+                wild rivers running through one of
+                the most undisturbed environments on Earth.</p>
+              <p><a class="btn btn-custom"
+                  href="https://www.discovertasmania.com.au/regions/west-coast/franklin-gordon-wild-rivers-national-reserve/?ct=franklin+river,Wtfnpd6EQGWfarGVBu5aQg,_7b9f8e4f-a167-4d10-ba0f-bb62a69ac962_en,stan"
+                  target="_blank" role="button">View details »</a></p>
+            </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <h1>About Tasmania</h1>
-        <p>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of
-          memories.
-          Pristine
-          coastlines, ancient forests, and glaciated mountains are key to these epic adventures.</p>
-          <div class="container featurette my-5">
-            <div class="row align-items-center">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">Exciting Adventure Awaits <span class="text-muted">Discover the Wilderness</span>
-                </h2>
-                <p class="lead">Embark on an unforgettable journey through Tasmania's most stunning landscapes. Whether you're
-                  into mountain biking, hiking, or rafting, our curated adventures offer something for every outdoor enthusiast.
-                </p>
-                <a href="#" class="btn btn-primary btn-lg">Explore Now</a>
-              </div>
-              <div class="col-md-5">
-                <img src="images/wineglass bay.webp" alt="Wineglass Bay" class="img-fluid rounded">
-              </div>
+        <div class="text-center">
+          <h1 id="about">About Tasmania</h1>
+          <h4>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of
+            memories.
+            Pristine
+            coastlines, ancient forests, and glaciated mountains are key to these epic adventures.</h4>
+          <h4>Embark on an unforgettable journey through Tasmania's most stunning landscapes. Whether
+            you're
+            into mountain biking, hiking, or rafting, our curated adventures offer something for every outdoor
+            enthusiast.</h4>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="featurette-divider">
+        <div class="container featurette my-5">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading" id="mountain-biking">10 Great Mountain Bike Networks</br> <span
+                  class="text-muted">Australia's
+                  undisputed mountain biking capital</span>
+              </h2>
+              <p class="lead">Picture descents from mountains to sea, rainforests blanketed in moss, marathon-length
+                trails to white-sand beaches, and
+                terrain that ranges from granite to hero dirt.
+                Here are the rides that have shifted the island's mountain biking reputation up a gear.
+              </p>
+              <a href="https://www.discovertasmania.com.au/experiences/stories/mountain-bike-trails/" target="_blank"
+                class="btn btn-custom">Explore Now</a>
+            </div>
+            <div class="col-md-5">
+              <img src="images/mtb.webp" alt="Mountain bike rider" class="img-fluid rounded">
             </div>
           </div>
-          
-          <div class="container featurette my-5">
-            <div class="row align-items-center">
-              <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">10 Great Mountain Bike Networks <span class="text-muted">Australia’s undisputed mountain biking capital</span></h2>
-                <p class="lead">Picture descents from mountains to sea, rainforests blanketed in moss, marathon-length trails to white-sand beaches, and
-                terrain that ranges from granite to hero dirt.</p>
-                <p>Here are the rides that have shifted the island's mountain biking reputation up a gear.</p>
-                <a href="https://www.discovertasmania.com.au/experiences/stories/mountain-bike-trails/" class="btn btn-primary btn-lg">Learn More</a>
-              </div>
-              <div class="col-md-5 order-md-1">
-                <img src="images/mtb.webp" alt="Tasmanian Wildlife" class="img-fluid rounded">
-              </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="container featurette my-5">
+          <div class="row align-items-center">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading" id="hiking">Walks & Hikes</br> <span class="text-muted">Exciting adventure
+                  awaits</span></h2>
+              <p class="lead">Stroll an empty beach or climb a craggy peak.
+                Find your own strip of deserted island, or finish each day in a private wilderness hut with a glass of
+                wine and a
+                comfortable bed.
+                Tasmania's trails are everything you want them to be.</p>
+              <a href="https://www.discovertasmania.com.au/things-to-do/outdoor-and-adventure/walks-and-hikes/"
+                target="_blank" class="btn btn-custom">Explore Now</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="images/hiking.webp" alt="Hiker" class="img-fluid rounded">
             </div>
           </div>
-          <div class="container featurette my-5">
-            <div class="row align-items-center">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">World-renowned Art Collection <span class="text-muted">Museum of Old and New Art</span>
-                </h2>
-                <p class="lead">It’s best to bring a sense of humour to Mona. Curiosity is useful, too. And a sense of wonder. It’s a place to appreciate art, without the pretension. Come here to have fun, get tipsy, be shocked, be delighted,
-                laugh, catch a gig, eat a burger, dine in style, think, dream.
-                </p>
-                <a href="https://www.discovertasmania.com.au/things-to-do/museums/mona/" class="btn btn-primary btn-lg">Things To Do</a>
-              </div>
-              <div class="col-md-5">
-                <img src="images/mona.webp" alt="Mona - Museum of Old and New Art" class="img-fluid rounded">
-              </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="container featurette my-5">
+          <div class="row align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading" id="rafting">Rafting</br> <span class="text-muted">Get your adrenaline
+                  pumping</span>
+              </h2>
+              <p class="lead">It's unclear which is flowing faster - the river or the adrenaline - as inflatable rafts
+                navigate and negotiate some of
+                the wildest and most awe-inspiring of Tasmania's rivers. Join a multi-day expedition on Australia's most
+                celebrated
+                wilderness river or hold on tight for a few hours of wild white-water in waterways across the
+                state.
+              </p>
+              <a href="https://www.discovertasmania.com.au/things-to-do/outdoor-and-adventure/rafting/" target="_blank"
+                class="btn btn-custom">Explore Now</a>
+            </div>
+            <div class="col-md-5">
+              <img src="images/rafting.webp" alt="White water rafting" class="img-fluid rounded">
             </div>
           </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -351,15 +403,16 @@
               title="See the live website">Netlify</a></p>
           <p>Contact me via <a href="mailto:nikolaclare@gmail.com" class="email-link"
               title="Contact Nikola Ashton via Email">nikolaclare@gmail.com</a></p>
-
-          <div class="d-flex mt-3 justify-content-center">
-            <a href="https://github.com/nikolaclare" target="_blank"
-              title="Explore Nikola Ashton's GitHub Repositories"><i class="fa-brands fa-square-github"></i></a>
-            <a href="https://www.linkedin.com/in/nikola-ashton/" target="_blank"
-              title="Connect with Nikola Ashton on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
         </div>
       </section>
+      <div class="social-media">
+        <div class="d-flex justify-content-center">
+          <a href="https://github.com/nikolaclare" target="_blank"
+            title="Explore Nikola Ashton's GitHub Repositories"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.linkedin.com/in/nikola-ashton/" target="_blank"
+            title="Connect with Nikola Ashton on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
   <script>
