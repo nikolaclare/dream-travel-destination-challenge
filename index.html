@@ -87,7 +87,7 @@
       section {
         max-width: 100%;
         margin: 0 auto;
-        padding: 050px 100px;
+        padding: 50px 100px;
       }
 
       footer {
@@ -123,10 +123,7 @@
       .grid {
         display: grid;
         grid-gap: 64px;
-      }
-
-      .grid-3-columns {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
       }
 
       footer h3 {
@@ -277,17 +274,61 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="container">
         <h1>About Tasmania</h1>
         <p>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of
           memories.
           Pristine
           coastlines, ancient forests, and glaciated mountains are key to these epic adventures.</p>
-        <a href="#">Learn more</a>
+          <div class="container featurette my-5">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">Exciting Adventure Awaits <span class="text-muted">Discover the Wilderness</span>
+                </h2>
+                <p class="lead">Embark on an unforgettable journey through Tasmania's most stunning landscapes. Whether you're
+                  into mountain biking, hiking, or rafting, our curated adventures offer something for every outdoor enthusiast.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Explore Now</a>
+              </div>
+              <div class="col-md-5">
+                <img src="images/wineglass bay.webp" alt="Wineglass Bay" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+          
+          <div class="container featurette my-5">
+            <div class="row align-items-center">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">10 Great Mountain Bike Networks <span class="text-muted">Australia’s undisputed mountain biking capital</span></h2>
+                <p class="lead">Picture descents from mountains to sea, rainforests blanketed in moss, marathon-length trails to white-sand beaches, and
+                terrain that ranges from granite to hero dirt.</p>
+                <p>Here are the rides that have shifted the island's mountain biking reputation up a gear.</p>
+                <a href="https://www.discovertasmania.com.au/experiences/stories/mountain-bike-trails/" class="btn btn-primary btn-lg">Learn More</a>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img src="images/mtb.webp" alt="Tasmanian Wildlife" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+          <div class="container featurette my-5">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">World-renowned Art Collection <span class="text-muted">Museum of Old and New Art</span>
+                </h2>
+                <p class="lead">It’s best to bring a sense of humour to Mona. Curiosity is useful, too. And a sense of wonder. It’s a place to appreciate art, without the pretension. Come here to have fun, get tipsy, be shocked, be delighted,
+                laugh, catch a gig, eat a burger, dine in style, think, dream.
+                </p>
+                <a href="https://www.discovertasmania.com.au/things-to-do/museums/mona/" class="btn btn-primary btn-lg">Things To Do</a>
+              </div>
+              <div class="col-md-5">
+                <img src="images/mona.webp" alt="Mona - Museum of Old and New Art" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
       </div>
     </main>
     <footer>
-      <section class="grid grid-3-columns">
+      <section class="grid">
         <div>
           <h3>About this website »</h3>
           <p>This project is a single-page landing website dedicated to showcasing the natural beauty and adventure
@@ -295,6 +336,8 @@
             Tasmania, Australia. The site aims to
             inspire
             adventure enthusiasts to explore these unique experiences.</p>
+          <p>Images used from <a href="https://www.discovertasmania.com.au/"
+              title="Link to the Discover Tasmania website">Discover Tasmania website</a></p>
         </div>
         <div>
           <h3>About me »</h3>
@@ -309,27 +352,12 @@
           <p>Contact me via <a href="mailto:nikolaclare@gmail.com" class="email-link"
               title="Contact Nikola Ashton via Email">nikolaclare@gmail.com</a></p>
 
-          <div class="d-flex mt-3">
+          <div class="d-flex mt-3 justify-content-center">
             <a href="https://github.com/nikolaclare" target="_blank"
               title="Explore Nikola Ashton's GitHub Repositories"><i class="fa-brands fa-square-github"></i></a>
             <a href="https://www.linkedin.com/in/nikola-ashton/" target="_blank"
               title="Connect with Nikola Ashton on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-
-        </div>
-        <div>
-          <h3>Website coded using »</h3>
-          <div class="d-flex justify-content-center m-3">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3"></i>
-            <i class="fa-brands fa-bootstrap"></i>
-          </div>
-          <div class="codes text-center">
-            <label class="ps-1">html5</label>
-            <label class="ps-4">css3</label>
-            <label class="ps-4">bootstrap</label>
-          </div>
-          <p>Images used from ...</p>
         </div>
       </section>
     </footer>
