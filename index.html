@@ -29,24 +29,208 @@
         --accent-color-sunset-orange: #FF6F61;
         --accent-color-deep-teal: #00796B;
       }
+
+      body {
+        background-color: var(--secondary-color-river-white);
+        color: var(--primary-color-forest-green);
+        font-family: var(--main-font-family);
+      }
+
+      h1 {
+        font-family: var(--secondary-font-famiy);
+        color: var(--primary-color-forest-green);
+      }
+
+      .navbar {
+        background-color: var(--accent-color-deep-teal);
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: var(--secondary-color-river-white);
+        font-family: var(--main-font-family);
+        font-weight: 700;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .carousel-caption h5 {
+        font-family: var(--secondary-font-famiy);
+        font-size: 2rem;
+      }
+
+      .carousel-caption p {
+        font-family: var(--main-font-family);
+      }
+
+      .btn-custom {
+        background-color: var(--secondary-color-soft-moss);
+        color: var(--secondary-color-river-white);
+        font-family: var(--main-font-family);
+      }
+
+      .feature-item img {
+        width: 200px;
+        height: 200px;
+        background-color: var(--secondary-color-mountain-grey);
+        border-radius: 50%;
+      }
+
+      .footer {
+        background-color: var(--primary-color-forest-green);
+        color: var(--secondary-color-river-white);
+      }
     </style>
   </head>
 
   <body>
-    <nav></nav>
-    <header></header>
+    <nav class="navbar border-bottom navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tasmania Adventures</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#mountain-biking">Mountain Biking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hiking">Hiking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rafting">Rafting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Tasmania</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/blue derby mountain bike tasmania.webp" class="d-block w-100"
+              alt="Blue Derby Mountain Bike Trails">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Blue Derby Mountain Bike Trails</h5>
+              <p>Experience the thrill of mountain biking through lush forests and scenic trails.</p>
+              <a href="https://www.discovertasmania.com.au/things-to-do/outdoor-and-adventure/mountain-bike-and-cycling/" target="_blank" class="btn btn-custom">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/overland-track.webp" class="d-block w-100" alt="Cradle Mountain Overland Track Walk">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cradle Mountain Overland Track Walk</h5>
+              <p>Discover the breathtaking beauty of Tasmania's iconic Overland Track.</p>
+              <a href="#" class="btn btn-custom">Explore Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/franklin river rafting.webp" class="d-block w-100" alt="Franklin River Rafting">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Franklin River Rafting</h5>
+              <p>Embark on an exhilarating white-water rafting adventure.</p>
+              <a href="#" class="btn btn-custom">Book a Tour</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
     <main>
-      <h1>About Tasmania</h1>
-      <p>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of memories. Pristine
-      coastlines, ancient forests, and glaciated mountains are key to these epic adventures.</p>
-      <a href="#">Learn more</a>
+      <div class="container my-5">
+        <div class="row text-center">
+          <div class="col-lg-4 feature-item">
+            <img src="images/blue-derby.webp" alt="Blue Derby">
+            <h2>Blue Derby</h2>
+            <p>Once a thriving mining town with the richest tin mine in the world and one of the last remaining wilderness areas, Derby
+            is now home to one of the world’s premier mountain bike networks located in Tasmania, Australia. Encompassing over 125km
+            of purpose built mountain bike trails with options to suit all skill levels. Start planning your Blue Derby Mountain
+            Bike Trails adventure here.</p>
+            <p><a class="btn btn-custom"
+                href="https://ridebluederby.com.au/trails" target="_blank"
+                role="button">Explore Trails »</a></p>
+          </div>
+          <div class="col-lg-4 feature-item">
+            <img src="images/cradle mountain.webp" alt="Cradle mountain">
+            <h2>Cradle Mountain</h2>
+            <p>​​Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness World Heritage Area.
+            From moss-covered rainforests and deep river gorges to snow-covered mountains, wild alpine moorlands and glacial lakes,
+            the park is revered for its diverse and breath-taking landscapes. Threading through it all is a web of walking
+              tracks, including the celebrated Overland Track.</p>
+            <p><a class="btn btn-custom" href="https://www.discovertasmania.com.au/regions/north-west/cradle-mountain-lake-st-clair-national-park/" target="_blank" role="button">Discover more »</a></p>
+          </div>
+          <div class="col-lg-4 feature-item">
+            <img src="images/Franklin River.webp" target="_blank" alt="Franklin River">
+            <h2>Franklin River</h2>
+            <p>The Franklin River curls around the base of one of Tasmania's most imposing mountains, Frenchmans Cap. Saved from being dammed in the 1980s, this remote and remarkable river now offers one of the world's great wilderness
+            rafting expeditions. With its clear pure water and even cleaner air, the Franklin is one of the last truly wild rivers running through one of
+            the most undisturbed environments on Earth.</p>
+            <p><a class="btn btn-custom" href="https://www.discovertasmania.com.au/regions/west-coast/franklin-gordon-wild-rivers-national-reserve/?ct=franklin+river,Wtfnpd6EQGWfarGVBu5aQg,_7b9f8e4f-a167-4d10-ba0f-bb62a69ac962_en,stan" target="_blank" role="button">View details »</a></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>About Tasmania</h1>
+        <p>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of
+          memories.
+          Pristine
+          coastlines, ancient forests, and glaciated mountains are key to these epic adventures.</p>
+        <a href="#">Learn more</a>
+      </div>
     </main>
-    <footer>
-      <p>Images used from ...</p>
-      <p>This project was coded by Nikola Ashton is open-sourced on GitHub and hosted on Netlify</p>
-      <p>Follow me on ...</p>
+    <footer class="footer">
+      <div>
+        <h3>More about Tasmania</h3>
+      </div>
+      <h3>About this website</h3>
+      <p>This project is a single-page landing website dedicated to showcasing the natural beauty and adventure opportunities in
+      Tasmania, Australia. It highlights three specific activities: mountain biking at Blue Derby Mountain Bike Trails, hiking
+      the iconic Cradle Mountain Overland Track, and white-water rafting on the Franklin River. The site aims to inspire
+      adventure enthusiasts to explore these unique experiences.</p>
+      <div class="container">
+        <p>Coded using</p>
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        <p>Images used from ...</p>
+      </div>
+      <div class="container">
+        <h3>About me</h3>
+        <p>This project was coded by <a href="https://nikola-ashton-portfolio.netlify.app/" target="_blank">Nikola Ashton</a> is
+          open-sourced on <a href="https://github.com/nikolaclare/dream-travel-destination-challenge" target="_blank">GitHub</a>
+          and
+          hosted on <a href="https://tasmania-adventure-landing-page.netlify.app/" target="_blank">Netlify</a></p>
+        <p>Follow me on</p>
+        <a href="https://www.linkedin.com/in/nikola-ashton/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/nikolaclare" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      </div>
     </footer>
-    </body>
+  </body>
   <script>
 
   </script>
