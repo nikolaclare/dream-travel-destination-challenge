@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
       rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -25,6 +25,7 @@
       :root {
         --main-font-family: 'Montserrat', sans-serif;
         --secondary-font-family: 'Playfair', serif;
+        --em-font-family: 'Playfair Display', serif;
         --primary-color-forest-green: #2C5F2D;
         --secondary-color-soft-moss: #A7C957;
         --secondary-color-river-white: #F1F3F4;
@@ -37,21 +38,28 @@
         font-family: var(--main-font-family);
       }
 
-      h1 {
-        font-size: 72px;
-      }
-
       h1,
       h2 {
         font-family: var(--secondary-font-family);
         color: var(--primary-color-forest-green);
       }
 
+      h1 {
+        font-size: 72px;
+      }
+
+      h2 {
+        font-size: 64px;
+      }
+
       h4 {
         font-size: 20px;
-        font-weight: normal;
-        font-style: italic;
+        font-weight: 300;
         line-height: 1.5;
+      }
+
+      em {
+        font-family: var(--em-font-family);
       }
 
       .navbar {
@@ -89,6 +97,19 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
+      }
+
+      .feature-item h3 {
+        font-size: 32px;
+      }
+
+      .about-tassie {
+        margin-bottom: 90px;
+      }
+
+      .featurette-heading {
+        font-family: var(--secondary-font-family);
+        font-size: 32px;
       }
 
       section {
@@ -137,7 +158,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      footer h3 {
+      footer h6 {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.5;
@@ -156,33 +177,54 @@
         text-decoration: none;
       }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-  .feature-item p {
-    font-size: 14px;
-  }
-  .lead {
-    font-size: 14px;
-  }
-  .featurette .btn {
-    margin-bottom: 15px;
-  }
-  .grid {
-    grid: none;
-    grid-gap: 20px;
-    padding: 20px;
-  }
-  footer .fa-brands {
-    margin: 0;
-    padding: 20px;
-  }
-}
+      @media (max-width: 900px) {
+        h1 {
+          font-size: 36px;
+        }
 
+        h2 {
+          font-size: 32px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+
+        .feature-item h3 {
+          font-size: 24px;
+        }
+
+        .feature-item p {
+          font-size: 14px;
+        }
+
+        .lead {
+          font-size: 14px;
+        }
+
+        .about-tassie {
+          margin-bottom: 70px;
+        }
+
+        .featurette {
+          text-align: center;
+        }
+
+        .featurette .btn {
+          margin-bottom: 15px;
+        }
+
+        .grid {
+          grid: none;
+          grid-gap: 20px;
+          padding: 20px;
+        }
+
+        footer .fa-brands {
+          margin: 0;
+          padding: 20px;
+        }
+      }
     </style>
   </head>
 
@@ -213,7 +255,7 @@
       </div>
     </nav>
     <header>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -223,7 +265,7 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel-item active">
             <img src="images/blue derby mountain bike tasmania.jpeg" class="d-block w-100"
               alt="Blue Derby Mountain Bike Trails" title="Blue Derby Mountain Bike Trails">
             <div class="carousel-caption d-none d-md-block">
@@ -268,12 +310,12 @@
     </header>
     <main>
       <div class="container my-5">
-        <h1 class="text-center">Experience the Best of Tasmania: Mountain Biking, Hiking & Rafting</h1>
+        <h1 class="text-center">Experience the Best of Tasmania: Mountain Biking, Hiking <em>&</em> Rafting</h1>
         <div class="row text-center gx-5">
           <div class="col-lg-4 feature-item">
             <div class="p-3">
               <img src="images/blue-derby.jpeg" alt="Blue Derby" title="Blue Derby">
-              <h2 class="mt-4">Blue Derby</h2>
+              <h3 class="mt-4">Blue Derby</h3>
               <p>Once a thriving mining town with the richest tin mine in the world and one of the last remaining
                 wilderness areas, Derby
                 is now home to one of the world's premier mountain bike networks located in Tasmania, Australia.
@@ -288,7 +330,7 @@
           <div class="col-lg-4 feature-item">
             <div class="p-3">
               <img src="images/cradle mountain.jpeg" alt="Cradle Mountain" title="Cradle Mountain">
-              <h2 class="mt-4">Cradle Mountain</h2>
+              <h3 class="mt-4">Cradle Mountain</h3>
               <p>Cradle Mountain is a place of exceptional natural beauty in the heart of the Tasmanian Wilderness
                 World
                 Heritage Area.
@@ -305,7 +347,7 @@
           <div class="col-lg-4 feature-item">
             <div class="p-3">
               <img src="images/Franklin River.jpeg" target="_blank" alt="Franklin River" title="Franklin River">
-              <h2 class="mt-4">Franklin River</h2>
+              <h3 class="mt-4">Franklin River</h3>
               <p>The Franklin River curls around the base of one of Tasmania's most imposing mountains, Frenchmans Cap.
                 Saved from being dammed in the 1980s, this remote and remarkable river now offers one of the world's
                 great
@@ -313,7 +355,7 @@
                 rafting expeditions. With its clear pure water and even cleaner air, the Franklin is one of the last
                 truly
                 wild rivers running through one of
-                the most undisturbed environments on Earth.</p>
+                the most undisturbed environments on&nbsp;Earth.</p>
               <p><a class="btn btn-custom"
                   href="https://www.discovertasmania.com.au/regions/west-coast/franklin-gordon-wild-rivers-national-reserve/?ct=franklin+river,Wtfnpd6EQGWfarGVBu5aQg,_7b9f8e4f-a167-4d10-ba0f-bb62a69ac962_en,stan"
                   target="_blank" role="button" title="View Franklin River">View Details »</a></p>
@@ -321,9 +363,9 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container about-tassie">
         <div class="text-center">
-          <h1 id="about">Why Tasmania is the Ultimate Adventure Destination</h1>
+          <h2 id="about">Why Tasmania is the Ultimate Adventure Destination</h2>
           <h4>Covering 3.5 million acres, the Tasmanian Wilderness World Heritage Area holds a lifetime's worth of
             memories.
             Pristine
@@ -339,10 +381,10 @@
         <div class="container featurette my-5">
           <div class="row align-items-center">
             <div class="col-md-7">
-              <h2 class="featurette-heading" id="mountain-biking">10 Great Mountain Bike Networks</br> <span
+              <h3 class="featurette-heading" id="mountain-biking">10 Great Mountain Bike Networks</br> <span
                   class="text-muted">Australia's
                   undisputed mountain biking capital</span>
-              </h2>
+              </h3>
               <p class="lead">Picture descents from mountains to sea, rainforests blanketed in moss, marathon-length
                 trails to white-sand beaches, and
                 terrain that ranges from granite to hero dirt.
@@ -360,8 +402,8 @@
         <div class="container featurette my-5">
           <div class="row align-items-center">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading" id="hiking">Walks & Hikes</br> <span class="text-muted">Exciting adventure
-                  awaits</span></h2>
+              <h3 class="featurette-heading" id="hiking">Walks <em>&</em> Hikes</br> <span class="text-muted">Exciting adventure
+                  awaits</span></h3>
               <p class="lead">Stroll an empty beach or climb a craggy peak.
                 Find your own strip of deserted island, or finish each day in a private wilderness hut with a glass of
                 wine and a
@@ -379,9 +421,9 @@
         <div class="container featurette my-5">
           <div class="row align-items-center">
             <div class="col-md-7">
-              <h2 class="featurette-heading" id="rafting">Rafting</br> <span class="text-muted">Get your adrenaline
+              <h3 class="featurette-heading" id="rafting">Rafting</br> <span class="text-muted">Get your adrenaline
                   pumping</span>
-              </h2>
+              </h3>
               <p class="lead">It's unclear which is flowing faster - the river or the adrenaline - as inflatable rafts
                 navigate and negotiate some of
                 the wildest and most awe-inspiring of Tasmania's rivers. Join a multi-day expedition on Australia's most
@@ -403,7 +445,7 @@
     <footer>
       <section class="grid">
         <div>
-          <h3>About this website »</h3>
+          <h6>About this website »</h6>
           <p>This page was created as part of a SheCodes Monthly Challenge to enhance my web development skills. It
             showcases
             a
@@ -421,7 +463,7 @@
               title="Link to the Discover Tasmania website">Discover Tasmania website</a></p>
         </div>
         <div>
-          <h3>About me »</h3>
+          <h6>About me »</h6>
           <p>This project was coded by me, <a href="https://nikola-ashton-portfolio.netlify.app/" target="_blank"
               title="View my portfolio">Nikola Ashton</a>. The code is open-sourced on <a
               href="https://github.com/nikolaclare/dream-travel-destination-challenge" target="_blank"
